@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.jpg" alt="CCNA Learning Journey Banner" width="100%">
+  <img src="images/banner.png" alt="CCNA Learning Journey Banner" width="100%">
 </p>
 
 <h1 align="center">CCNA Learning Journey 🚀</h1>
