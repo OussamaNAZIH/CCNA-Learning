@@ -10,7 +10,7 @@ Welcome to my CCNA learning repository.
 
 ## Progress
 
-- [ ] Network Fundamentals
+- [x] Network Fundamentals
 - [ ] IPv4 Addressing
 - [ ] Subnetting
 - [ ] Ethernet
@@ -26,5 +26,4 @@ Welcome to my CCNA learning repository.
 - [ ] Security
 - [ ] Automation
 
-## Labs
-Coming soon...
+
