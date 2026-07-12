@@ -82,6 +82,7 @@ My goal is to build a solid networking foundation for a future career in **Cloud
 After CCNA, I plan to document my learning in:
 
 - Linux
+- Security+
 - Python
 - AWS
 - Docker
