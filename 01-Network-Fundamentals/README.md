@@ -324,5 +324,9 @@ Clients communicate with servers and other devices through the network infrastru
 | Firewall | Layer 3–7 | Filters and secures network traffic |
 | IPS | Layer 3–7 | Detects and blocks network attacks |
 | NGFW | Layer 3–7 | Firewall with integrated IPS and advanced security |
+| Access Point (AP) | Provides wireless network connectivity |
+| Wireless LAN Controller (WLC) | Centrally manages multiple Access Points |
+| Cisco DNA Center | Centralized network management, automation, analytics, and monitoring platform |
+| Client | End device that sends and receives data over the network |
 
 
