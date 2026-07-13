@@ -1,11 +1,16 @@
+# 🌐 Network Fundamentals
 
-What is network ?
-    -Also called (Computer Network), its 2 or more devices needs to share information between them.
+## What is a Network?
 
-Network Types (Sizes):
-    -LAN(Local Area Network):
-        +some users in the same room/department connected using a swith device.
-        +Or some users in different rooms/department connected using a router and some switches.
-    -WAN(Wide Area Network) Users connected globally through the internet:
-        +Services Providers will be needed.
-        +A group of devices (Routers,Swiches and other devices) will be needed.
+A **computer network** is a group of **two or more devices** connected together to exchange data and share resources, such as files, printers, or Internet access.
+
+Common network devices include:
+
+- 💻 Computers
+- 🖥️ Servers
+- 📱 Mobile devices
+- 🖨️ Printers
+- 🌐 Routers
+- 🔀 Switches
+
+---
