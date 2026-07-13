@@ -314,6 +314,30 @@ Clients communicate with servers and other devices through the network infrastru
 
 ---
 
+## 🖥️ Servers
+
+A **server** is a computer or device that provides services, resources, or data to other devices on a network, known as **clients**. Servers are designed to handle multiple requests simultaneously and operate continuously to ensure services remain available.
+
+Unlike a regular personal computer, a server typically includes more powerful hardware, such as:
+
+- High-performance processors (CPUs)
+- Large amounts of memory (RAM)
+- High-capacity and redundant storage (RAID)
+- Multiple network interfaces
+- Reliable power supplies
+- Specialized server operating systems (e.g., Windows Server, Linux)
+
+### Common Server Types
+
+- 🌐 Web Server
+- 📁 File Server
+- 🗄️ Database Server
+- 📧 Mail Server
+- 🔒 Authentication Server
+- ☁️ Cloud Server
+
+---
+
 # 📌 Summary
 
 | Device | OSI Layer | Main Function |
