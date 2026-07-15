@@ -73,7 +73,7 @@ When receiving data, the process is reversed (**Decapsulation**).
 - Some layers overlap in functionality
 
 <p align="center">
-  <img src="images/osi-model.png" alt="CCNA Learning Journey Banner" width="100%">
+  <img src="../images/osi-model.png" alt="osi-model" width="100%">
 </p>
 ---
 
@@ -128,7 +128,7 @@ Network Access → Frame → Bits
 - Some functions are combined into fewer layers
 
 <p align="center">
-  <img src="images/tcpip-model.png" alt="CCNA Learning Journey Banner" width="100%">
+  <img src="../images/tcpip-model.png" alt="tcpip-model" width="100%">
 </p>
 
 
