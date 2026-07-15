@@ -37,21 +37,9 @@ Although modern networks primarily use the TCP/IP model, the OSI model is still 
 
 When sending data:
 
-```text
-Application
-      ↓
-Presentation
-      ↓
-Session
-      ↓
-Transport    → Segment
-      ↓
-Network      → Packet
-      ↓
-Data Link    → Frame
-      ↓
-Physical     → Bits
-```
+<p align="center">
+  <img src="../images/osi-model.png" alt="osi-model" width="50%">
+</p>
 
 When receiving data, the process is reversed (**Decapsulation**).
 
@@ -72,9 +60,6 @@ When receiving data, the process is reversed (**Decapsulation**).
 - More complex than the TCP/IP model
 - Some layers overlap in functionality
 
-<p align="center">
-  <img src="../images/osi-model.png" alt="osi-model" width="50%">
-</p>
 ---
 
 # 🌐 TCP/IP Model
@@ -100,15 +85,9 @@ It consists of **4 layers**.
 
 ## TCP/IP Encapsulation
 
-```text
-Application
-      ↓
-Transport      → Segment
-      ↓
-Internet       → Packet
-      ↓
-Network Access → Frame → Bits
-```
+<p align="center">
+  <img src="../images/tcpip-model.png" alt="tcpip-model" width="50%">
+</p>
 
 ---
 
