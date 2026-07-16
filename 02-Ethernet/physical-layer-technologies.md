@@ -54,9 +54,10 @@ Pair 4 → Pins 7 & 8
 # UTP (Unshielded Twisted Pair)
 
 **UTP** is the most common Ethernet cable used in homes, offices, and enterprise LANs.
-
 It contains twisted wire pairs without additional shielding.
-  <img src="../images/utp-cable.png" alt="utp-cable" width="50%">
+
+<img src="../images/utp-cable.png" alt="utp-cable" width="50%">
+
 ### Advantages
 
 - ✅ Low cost
