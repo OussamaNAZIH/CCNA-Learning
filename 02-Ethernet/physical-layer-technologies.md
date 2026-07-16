@@ -291,7 +291,9 @@ Fiber optic cables use specialized connectors to connect networking equipment.
 | FC | Threaded connector for high-vibration environments |
 | ST | Twist-lock connector found in older installations |
 | MTP/MPO | Multi-fiber connector for high-density and high-speed networking |
-  <img src="../images/lc-sc-fc-st-mpo.png" alt="lc-sc-fc-st-mpo/mpt" width="100%">
+  
+<img src="../images/lc-sc-fc-st-mpo.png" alt="lc-sc-fc-st-mpo/mpt" width="100%">
+
 ---
 
 ## Frequently Asked Questions
@@ -304,7 +306,7 @@ Light can travel much longer distances with significantly lower signal loss and 
 
 Network devices use **optical transceivers** (such as **SFP**, **SFP+**, **QSFP**, or **QSFP28** modules) to convert electrical signals into light for transmission and convert incoming light back into electrical signals for processing.
 
-  <img src="../images/sfp-port-fiber.png" alt="sfp-port-fiber" width="100%">
+<img src="../images/sfp-port-fiber.png" alt="sfp-port-fiber" width="50%">
 
 ### Why is fiber speed limited?
 
