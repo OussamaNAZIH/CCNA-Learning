@@ -108,7 +108,9 @@ It contains twisted wire pairs without additional shielding.
 # RJ-45 Connector
 
 The **RJ-45 (Registered Jack-45)** connector is the standard connector used for Ethernet cables.
-  <img src="../images/rj45.png" alt="rj45" width="50%">
+
+<img src="../images/rj45.png" alt="rj45" width="50%">
+
 ### Characteristics
 
 - 8 Pins
@@ -274,7 +276,8 @@ Its smaller core allows only one light path, reducing signal loss and enabling v
 | Cost | Lower | Higher |
 | Typical Use | LANs & Data Centers | WANs & ISP Networks |
 
-  <img src="../images/optical-fiber.png" alt="optical-fiber" width="100%">
+<img src="../images/optical-fiber.png" alt="optical-fiber" width="50%">
+
 ---
 
 # Common Fiber Connectors
