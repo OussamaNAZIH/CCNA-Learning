@@ -324,3 +324,161 @@ The speed of light inside the fiber is extremely high. However, the maximum netw
 | EMI Resistance | Low | Excellent |
 | Cost | Lower | Higher |
 | Typical Use | LANs | Data Centers, WANs, ISP Networks |
+
+
+---
+
+# 🔗 Point-to-Point and Shared Media
+
+Network communication can occur over different types of physical connections. The two most common communication models are **Point-to-Point (P2P)** and **Shared Media**.
+
+---
+
+## Point-to-Point (P2P)
+
+A **Point-to-Point (P2P)** connection is a dedicated communication link between **exactly two devices**. No other devices share the transmission medium.
+
+### Characteristics
+
+- Direct connection between two devices
+- Dedicated bandwidth
+- No collisions caused by other devices
+- Simple and reliable communication
+
+### Example
+
+```text
+PC ───────────── Router
+```
+
+or
+
+```text
+Router ───────────── Router
+```
+
+### Advantages
+
+- ✅ High performance
+- ✅ Better security
+- ✅ Low latency
+- ✅ Reliable communication
+
+---
+
+## Shared Media
+
+In a **Shared Media** network, multiple devices share the same communication medium. Communication is controlled by a **Layer 2 device**, such as a switch.
+
+### Characteristics
+
+- Multiple devices share the network
+- Devices communicate through a switch
+- Modern Ethernet switches reduce collisions by creating separate collision domains
+
+### Example
+
+```text
+          Switch
+        ┌────┼────┐
+        │    │    │
+      PC1   PC2  PC3
+```
+
+### Advantages
+
+- ✅ Easy to expand
+- ✅ Cost-effective
+- ✅ Centralized management
+
+---
+
+# ⚡ Power over Ethernet (PoE)
+
+**Power over Ethernet (PoE)** is a technology that allows an Ethernet cable to carry both **data** and **electrical power** to compatible devices.
+
+This eliminates the need for a separate power adapter, reducing installation costs and simplifying cable management.
+
+---
+
+## Benefits of PoE
+
+- ✅ One cable for both data and power
+- ✅ Easier installation
+- ✅ Lower infrastructure cost
+- ✅ No separate AC power adapter required
+- ✅ Flexible device placement
+
+---
+
+## PoE Components
+
+### PSE (Power Sourcing Equipment)
+
+A **Power Sourcing Equipment (PSE)** provides electrical power over the Ethernet cable.
+
+Examples:
+
+- PoE Switch
+- PoE Injector
+
+---
+
+### PD (Powered Device)
+
+A **Powered Device (PD)** receives power from the PSE.
+
+Examples:
+
+- Wireless Access Point (AP)
+- IP Phone
+- IP Camera
+- VoIP Phone
+- IoT Devices
+
+---
+
+## PoE Negotiation
+
+Before power is supplied, the **PSE** and **PD** perform a negotiation process to determine:
+
+- Whether the device supports PoE
+- How much power is required
+- The appropriate power level to deliver
+
+This protects devices that do not support PoE.
+
+---
+
+## PoE Standards
+
+| Standard | Maximum Power |
+|----------|---------------:|
+| IEEE 802.3af (PoE) | 15.4 W |
+| IEEE 802.3at (PoE+) | 30 W |
+| IEEE 802.3bt (PoE++) | Up to 90–95 W |
+
+---
+
+## Universal Power over Ethernet (UPoE)
+
+**Universal Power over Ethernet (UPoE)** is Cisco's enhanced PoE technology.
+
+Unlike standard PoE, which may use fewer wire pairs depending on the standard, **UPoE uses all four twisted pairs** of an Ethernet cable to deliver higher levels of power while simultaneously transmitting data.
+
+This makes it suitable for devices with higher power requirements, such as:
+
+- High-performance wireless access points
+- Video conferencing systems
+- Thin clients
+- Digital displays
+
+---
+
+# 📌 Key Takeaways
+
+- **Point-to-Point (P2P)** connects exactly two devices using a dedicated link.
+- **Shared Media** allows multiple devices to communicate over the same network infrastructure.
+- **PoE** delivers both data and electrical power through a single Ethernet cable.
+- **PSE** supplies power, while **PD** receives it.
+- Modern PoE standards can deliver **up to 90–95 W**, and **UPoE** uses all four twisted pairs for higher power delivery.
