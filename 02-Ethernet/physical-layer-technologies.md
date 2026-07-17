@@ -482,3 +482,157 @@ This makes it suitable for devices with higher power requirements, such as:
 - **PoE** delivers both data and electrical power through a single Ethernet cable.
 - **PSE** supplies power, while **PD** receives it.
 - Modern PoE standards can deliver **up to 90–95 W**, and **UPoE** uses all four twisted pairs for higher power delivery.
+
+
+---
+
+# ⚠️ Collisions
+
+A **collision** occurs when two or more devices attempt to transmit data **at the same time** over a **shared communication medium**. When this happens, the transmitted frames interfere with each other, causing data corruption and requiring retransmission.
+
+Collisions were common in older Ethernet networks that used **hubs** or operated in **Half-Duplex** mode. Modern switched Ethernet networks operating in **Full-Duplex** mode eliminate collisions.
+
+---
+
+## Collision Example
+
+```text
+        Hub
+      ┌──┼──┐
+      │  │  │
+     PC1 PC2 PC3
+
+PC1  ─────►
+PC2  ─────►
+
+Both devices transmit simultaneously
+        ↓
+     💥 Collision
+```
+
+---
+
+# 🛡️ Carrier Sense Multiple Access with Collision Detection (CSMA/CD)
+
+**CSMA/CD** is an Ethernet protocol designed to reduce collisions on shared media.
+
+Before transmitting data, a device:
+
+1. **Carrier Sense** – Listens to determine whether the medium is already in use.
+2. **Multiple Access** – Multiple devices share the same transmission medium.
+3. **Collision Detection** – If two devices transmit simultaneously, they detect the collision.
+4. **Backoff Algorithm** – Each device waits for a random amount of time before attempting to retransmit.
+
+> **Note:** CSMA/CD is only used in **Half-Duplex Ethernet**. It is **not used in Full-Duplex switched networks**.
+
+---
+
+# 🔄 Half-Duplex
+
+In **Half-Duplex** communication, data can travel in **both directions**, but **only one direction at a time**.
+
+If one device is transmitting, the other must wait until the transmission is complete.
+
+### Characteristics
+
+- One device transmits at a time
+- Collisions can occur
+- Uses CSMA/CD
+- Lower performance than Full-Duplex
+
+### Example
+
+```text
+PC ───────── Switch
+
+Send ➜
+
+OR
+
+Receive ◀
+
+(Not both at the same time)
+```
+
+---
+
+# ⚡ Full-Duplex
+
+In **Full-Duplex** communication, devices can **transmit and receive simultaneously**.
+
+Since each device has separate transmit and receive paths, collisions do not occur.
+
+### Characteristics
+
+- Simultaneous transmission and reception
+- No collisions
+- Higher throughput
+- Used in modern switched Ethernet networks
+
+### Example
+
+```text
+PC ⇄ Switch
+
+Send ➜
+Receive ◀
+
+Both happen simultaneously.
+```
+
+---
+
+# ⚠️ Common Layer 1 Issues
+
+Physical layer problems often prevent devices from establishing a network connection.
+
+### Common Causes
+
+- Damaged or disconnected cables
+- Incorrect cable type
+- Faulty RJ-45 connectors
+- Unsupported or incompatible SFP transceivers
+- Hardware failure
+- Excessive cable length
+
+---
+
+# ⚠️ Duplex Mismatch
+
+A **duplex mismatch** occurs when one device operates in **Half-Duplex** while the other operates in **Full-Duplex**.
+
+### Symptoms
+
+- Slow network performance
+- Frame errors
+- Dropped packets
+- Late collisions
+
+> **Best Practice:** Both devices should use the **same duplex setting** or negotiate it automatically.
+
+---
+
+# ⚠️ Speed Mismatch
+
+A **speed mismatch** occurs when connected devices are configured for different Ethernet speeds.
+
+Examples include:
+
+- 10 Mbps
+- 100 Mbps
+- 1 Gbps
+- 10 Gbps
+
+If auto-negotiation fails or one side is manually configured, communication problems may occur.
+
+> **Best Practice:** Configure both devices with matching speed settings or enable **Auto-Negotiation**.
+
+---
+
+# 📌 Key Takeaways
+
+- A **collision** happens when two devices transmit at the same time on shared media.
+- **CSMA/CD** detects collisions and schedules retransmissions.
+- **Half-Duplex** supports communication in one direction at a time and may experience collisions.
+- **Full-Duplex** allows simultaneous transmission and reception without collisions.
+- Duplex and speed settings should match on both ends of a network connection.
